@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+  --font-sans: "Montserrat", sans-serif;
+
+  /* custom container size */
+  --container-max: 1200px;
+}
+
+@layer utilities {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--container-max);
+  }
+}
+
+
+:root {
+    --color-primary: #0C63E2;
+    --color-primary-dark: #034DB8;
+    --color-secondary: #EDCE68;
+    --color-secondary-dark: #CEB665;
+}
