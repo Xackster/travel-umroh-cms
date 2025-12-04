@@ -7,18 +7,18 @@
 - Examples (dropdownHelperRadio, helper-radio-4)
 -->
 <div class="relative">
-    <button id="dropdownHelperCategory" data-dropdown-toggle="dropdownHelperCategoryRadio" class="mt-2 flex items-center justify-between text-gray-800 bg-white border-2 border-[var(--color-secondary)] w-full cursor-pointer active:scale-95 rounded-2xl hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium focus:ring-[var(--color-secondary)] shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none" type="button">
+    <button id="dropdownHelperPrice" data-dropdown-toggle="dropdownHelperPriceRadio" class="mt-2 flex items-center justify-between text-gray-800 bg-white border-2 border-[var(--color-secondary)] w-full cursor-pointer active:scale-95 rounded-2xl hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium focus:ring-[var(--color-secondary)] shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none" type="button">
 
         <!-- Input Title ---------------- -->
-        <i class="fi fi-br-category-alt"></i> Harga
+        <i class="fi fi-br-money-bill-wave"></i> Harga
         <i class="fi fi-br-angle-small-down w-8"></i>
         <!-- End Input Title ------------ -->
 
     </button>
 
     <!-- Dropdown menu -->
-    <div id="dropdownHelperCategoryRadio" class="z-10 hidden bg-white rounded-2xl border border-default-medium rounded-base shadow-lg w-full" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top">
-        <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownHelperCategory">
+    <div id="dropdownHelperPriceRadio" class="z-10 hidden bg-white rounded-2xl border border-default-medium rounded-base shadow-lg w-full" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top">
+        <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownHelperPrice">
 
             <!-- Radio Input 1 ------------------- -->
             <li>

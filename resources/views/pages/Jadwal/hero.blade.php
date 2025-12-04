@@ -14,32 +14,34 @@
             <div class="flex justify-start w-full items-start flex-col">
 
 
-                <!-- Departure Location --------- -->
-                <div class="flex flex-col">
-                    @include('components.jadwal.departure_location')
-                </div>
-                <!-- End Departure Location ----- -->
 
                 <!--  Location --------- -->
                 <div class="w-full grid grid-cols-4 gap-6 items-center">
 
+                    <!-- Departure Location --------- -->
+                    <div class="flex flex-col">
+                        @include('components.jadwal.departure_location')
+                    </div>
+                    <!-- End Departure Location ----- -->
+
+                    <!-- Kategori -->
                     <div class="flex flex-col">
                         @include('components.jadwal.package_category')
                     </div>
+                    <!-- End Kategori -->
 
+                    <!-- Durasi -->
                     <div class="flex flex-col">
                         @include('components.jadwal.package_duration')
                     </div>
+                    <!-- End Durasi -->
 
+                    <!-- Harga -->
                     <div class="flex flex-col">
                         @include('components.jadwal.package_price')
                     </div>
-
-                    <div class="flex">
-                        <button class="rounded-md bg-[var(--color-secondary)] py-3 px-6 text-center text-sm text-white active:scale-95 hover:cursor-pointer transition-all shadow-md hover:shadow-lg font-bold focus:shadow-none active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none w-full" type="button">
-                            Telusuri Paket
-                        </button>
-                    </div>
+                    <!-- End Harga -->
+                     
                 </div>
                 <!--  End Location ---- -->
 

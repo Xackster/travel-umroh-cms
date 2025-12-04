@@ -1,45 +1,44 @@
 <!-- Dropdown Lokasi Keberangkatan -->
 
-<ul class="p-2 text-sm text-body font-medium flex flex-row" aria-labelledby="dropdownHelperLocationButton">
-    <li>
-        <div class="flex p-2 w-full hover:bg-neutral-tertiary-medium hover:text-heading rounded">
-            <div class="flex items-center h-5">
-                <input id="helper-location-4" name="helper-location" type="radio" value="" class="w-4 h-4 text-neutral-primary border-default-strong bg-neutral-secondary-strong rounded-full checked:border-brand focus:ring-2 focus:outline-none focus:ring-brand-subtle border border-default appearance-none">
-            </div>
-            <div class="ms-2 text-sm">
-                <label for="helper-location-4" class="select-none font-medium text-heading">
-                    <div class="mb-1">Aceh</div>
-                    <p id="helper-location-text-4" class="text-xs font-normal text-body">Keberangkatan dimulai dari <span class="italic font-bold">Aceh</span>.</p>
-                </label>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="flex p-2 w-full hover:bg-neutral-tertiary-medium hover:text-heading rounded">
-            <div class="flex items-center h-5">
-                <input id="helper-location-5" name="helper-location" type="radio" value="" class="w-4 h-4 text-neutral-primary border-default-strong bg-neutral-secondary-strong rounded-full checked:border-brand focus:ring-2 focus:outline-none focus:ring-brand-subtle border border-default appearance-none">
-            </div>
-            <div class="ms-2 text-sm">
-                <label for="helper-location-5" class="select-none font-medium text-heading">
-                    <div class="mb-1">Jakarta</div>
-                    <p id="helper-location-text-5" class="text-xs font-normal text-body">Keberangkatan dimulai dari <span class="italic font-bold">Jakarta</span>.</p>
-                </label>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="flex p-2 w-full hover:bg-neutral-tertiary-medium hover:text-heading rounded">
-            <div class="flex items-center h-5">
-                <input id="helper-location-6" name="helper-location" type="radio" value="" class="w-4 h-4 text-neutral-primary border-default-strong bg-neutral-secondary-strong rounded-full checked:border-brand focus:ring-2 focus:outline-none focus:ring-brand-subtle border border-default appearance-none">
-            </div>
-            <div class="ms-2 text-sm">
-                <label for="helper-location-6" class="select-none font-medium text-heading">
-                    <div class="mb-1">Bali</div>
-                    <p id="helper-location-text-6" class="text-xs font-normal text-body">Keberangkatan dimulai dari <span class="italic font-bold">Bali</span>.</p>
-                </label>
-            </div>
-        </div>
-    </li>
-</ul>
+<!--
+=========== RULES ==========
+- Use unique ids for dropdown and radio inputs
+- Keep the structure consistent 
+- Examples (dropdownHelperRadio, helper-radio-4)
+-->
+<div class="relative">
+    <button id="dropdownHelperLocation" data-dropdown-toggle="dropdownHelperLocationRadio" class="mt-2 flex items-center justify-between text-gray-800 bg-white border-2 border-[var(--color-secondary)] w-full cursor-pointer active:scale-95 rounded-2xl hover:bg-brand-strong focus:ring-4 focus:ring-brand-medium focus:ring-[var(--color-secondary)] shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none" type="button">
 
+        <!-- Input Title ---------------- -->
+        <i class="fi fi-br-location-alt"></i> Location
+        <i class="fi fi-br-angle-small-down w-8"></i>
+        <!-- End Input Title ------------ -->
+
+    </button>
+
+    <!-- Dropdown menu -->
+    <div id="dropdownHelperLocationRadio" class="z-10 hidden bg-white rounded-2xl border border-default-medium rounded-base shadow-lg w-full" data-popper-reference-hidden="" data-popper-escaped="" data-popper-placement="top">
+        <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownHelperLocation">
+
+            <!-- Radio Input 1 ------------------- -->
+            <li>
+                <div class="flex p-2 w-full hover:bg-neutral-tertiary-medium hover:text-heading rounded">
+                    <div class="flex items-center h-5">
+                        <!-- Radio 1 --------------- -->
+                        <input id="helper-location-4" name="helper-location" type="radio" value="" class="w-4 h-4 text-neutral-primary border-default-strong bg-neutral-secondary-strong rounded-full checked:border-brand focus:ring-2 focus:outline-none focus:ring-brand-subtle border border-default appearance-none">
+                        <!-- End Radio 1 ----------- -->
+                    </div>
+                    <div class="ms-2 text-sm">
+                        <label for="helper-location-4" class="select-none font-medium text-heading">
+                            <div class="mb-1">Paket Reguler</div>
+                            <!-- <p id="helper-location-text-4" class="text-xs font-normal text-body">Some helpful instruction goes over here.</p> -->
+                        </label>
+                    </div>
+                </div>
+            </li>
+            <!-- End Radio Input 1 --------------- -->
+
+        </ul>
+    </div>
+</div>
 <!-- End Dropdown Lokasi Keberangkatan -->
